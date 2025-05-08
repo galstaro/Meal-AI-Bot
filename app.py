@@ -32,7 +32,7 @@ def whatsapp_reply():
 
     
     timestamp = datetime.now().strftime("%Y-%m-%d %H:%M:%S")
-    print(f"{timestamp} | {user_phone} | {user_msg}")
+    print(f"{timestamp} | {user_phone} | {user_msg}", flush=True)
 
     totals = user_meals[user_phone][today]
 
