@@ -30,6 +30,10 @@ def whatsapp_reply():
             del user_meals[user_phone][date]
             del last_meals[user_phone][date]
 
+    
+    timestamp = datetime.now().strftime("%Y-%m-%d %H:%M:%S")
+    print(f"{timestamp} | {user_phone} | {user_msg}")
+
     totals = user_meals[user_phone][today]
 
     # ✅ Handle "/summary" command
